@@ -16,7 +16,7 @@ namespace Mission_3_Assignment
         private List<FoodItem> FoodItems = new List<FoodItem>(); // needs to be a non-static list. 
         public void AddFoodItem()
         {
-            Console.Write("How many food items would you like to add? (Enter a number): ");
+            Console.Write("\nHow many food items would you like to add? (Enter a number): ");
             if (!int.TryParse(Console.ReadLine(), out int answer) || answer <= 0)
             {
                 Console.WriteLine("Invalid input. Please enter a valid number.");
